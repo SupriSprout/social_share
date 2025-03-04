@@ -8,7 +8,7 @@ buildscript {
         mavenCentral() // jcenter yerine mavenCentral() kullan
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.3' // Güncel Gradle sürümü
+        classpath 'com.android.tools.build:gradle:7.2.2' // Güncel Gradle sürümü
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
