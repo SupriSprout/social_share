@@ -2,7 +2,7 @@ group 'com.shekarmudaliyar.social_share'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.8.22' // Güncellenmiş Kotlin sürümü
+    ext.kotlin_version = '2.2.0' // Güncellenmiş Kotlin sürümü
     repositories {
         google()
         mavenCentral() // jcenter yerine mavenCentral() kullan
@@ -38,12 +38,19 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17 // Java 17 kullanımı
+        // 🔑 Samakan ke Java 17
+        sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "17" // Kotlin'i Java 17 ile çalıştır
+        // 🔑 Samakan ke Kotlin JVM target 17
+        jvmTarget = "17"
+    }
+
+    // 🔑 Kalau masih bentrok, pakai toolchain
+    kotlin {
+        jvmToolchain(17)
     }
 
     lintOptions {
