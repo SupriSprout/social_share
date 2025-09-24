@@ -48,11 +48,6 @@ android {
         jvmTarget = "1.8"
     }
 
-    // 🔑 Kalau masih bentrok, pakai toolchain
-    kotlin {
-        jvmToolchain(18)
-    }
-
     lintOptions {
         disable 'InvalidPackage'
     }
