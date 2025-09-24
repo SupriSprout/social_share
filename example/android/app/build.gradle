@@ -41,18 +41,18 @@ android {
 
     compileOptions {
         // 🔑 Samakan ke Java 17
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     kotlinOptions {
         // 🔑 Samakan ke Kotlin JVM target 17
-        jvmTarget = "17"
+        jvmTarget = "1.8"
     }
 
     // 🔑 Kalau masih bentrok, pakai toolchain
     kotlin {
-        jvmToolchain(17)
+        jvmToolchain(18)
     }
 
     defaultConfig {
